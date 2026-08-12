@@ -28,6 +28,14 @@ AI probes reach post-quantum consensus, seeded by a public randomness beacon.
 Systems that need to be *provably* trustworthy, not just trusted — post-quantum cryptography, multi-agent
 architectures, and the deterministic scaffolding that makes probabilistic AI produce auditable results.
 
+### How I ship
+
+Sprint-focused and iterative, not big-bang releases — get something real out, then tighten it fast based on
+what actually breaks. Entropa's build history is the evidence: three separate live bugs found, root-caused,
+fixed, tested, and redeployed **the same day** they surfaced, each one immediately followed by a regression
+test and a permanent guardrail (see the [failure-modes table](https://github.com/aimozart/entropa-public/blob/main/OBSERVABILITY.md)).
+Ship, observe, fix fast, harden, repeat.
+
 ### Working pseudonymously
 
 I build and ship under this handle by choice — it keeps the conversation on the work, not a resume, and
