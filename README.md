@@ -18,6 +18,10 @@ AI probes reach post-quantum consensus, seeded by a public randomness beacon.
 
 **[→ github.com/aimozart/entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
+[![crates.io: entropa-core](https://img.shields.io/crates/v/entropa-core.svg?label=entropa-core)](https://crates.io/crates/entropa-core)
+[![crates.io: entropa-node](https://img.shields.io/crates/v/entropa-node.svg?label=entropa-node)](https://crates.io/crates/entropa-node)
+[![Trusted Publishing](https://img.shields.io/badge/crates.io-Trusted%20Publisher%20(OIDC)-3ddc84)](https://github.com/aimozart/entropa-public/actions/workflows/publish.yml)
+
 - 🔐 **ML-DSA (NIST FIPS-204)** signatures — verified byte-exact against NIST's own known-answer test vectors
 - 🌐 **Proof of Entropy** — consensus with no mining, no staking, seeded by [drand](https://drand.love)'s public randomness beacon
 - 🦀 **100% Rust** — cryptography, consensus, and gateway, one language throughout
