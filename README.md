@@ -3,7 +3,7 @@
 
 ### aimozart
 
-**Cloud Infrastructure / DevOps Engineer** — AWS, Terraform, Pulumi, Rust, post-quantum crypto.
+**Cloud Infrastructure / DevOps Professional** — AWS, Terraform, Pulumi, Rust, post-quantum crypto.
 
 </div>
 
