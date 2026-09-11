@@ -1,9 +1,8 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/aimozart/entropa-public/main/crates/api/scryon/assets/favicon-512.png" width="96" />
 
 ### aimozart
 
-**Cloud Infrastructure / DevOps Professional** — AWS, Terraform, Pulumi, Rust, post-quantum crypto.
+**Backend / Systems Engineer** — Java 21, Spring Boot / Spring Cloud microservices, Kafka, Kubernetes, AI-agent infrastructure.
 
 </div>
 
@@ -11,69 +10,64 @@
 
 ### Building Entropa
 
-A **post-quantum trust layer for AI agents** — not a currency. No mining, no token, no hype.
+A **tamper-evident audit-trail platform for AI-agent decisions** — a real Java 21 / Spring Boot /
+Spring Cloud microservices system: Eureka service discovery, a centralized Config Server, an
+OAuth2/JWT-secured Spring Cloud Gateway, Kafka-driven event flow between an ingest service and a
+single-writer transparency/hash-chain service, PostgreSQL persistence, Keycloak identity, and a
+Stripe-integrated demo signup flow — containerized with Docker and deployed on Kubernetes (GKE)
+via a templated Helm chart, behind a real SSL-terminated load balancer.
 
-A single-writer transparency log, cryptographically signed and independently verifiable —
-not decentralized consensus, deliberately. An earlier version ran real multi-validator
-quorum consensus in production; it was removed once it became clear it solved a
-multi-party-trust problem this single-operator project doesn't actually have.
-*Entropa is boring. All we do is keep your AI agents auditable.*
+Zero real customers by design — this is a portfolio/demo project, not a live commercial product.
+A visitor signs up with a real Stripe **test-mode** checkout ($0, no real charge) and gets into a
+live dashboard showing real mock AI-agent decisions flowing through the actual pipeline, so the
+architecture is visibly real without anyone handing over real payment info.
 
 **[→ github.com/aimozart/entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
-[![crates.io: entropa-core](https://img.shields.io/crates/v/entropa-core.svg?label=entropa-core)](https://crates.io/crates/entropa-core)
-[![crates.io: entropa-node](https://img.shields.io/crates/v/entropa-node.svg?label=entropa-node)](https://crates.io/crates/entropa-node)
-[![Trusted Publishing](https://img.shields.io/badge/crates.io-Trusted%20Publisher%20(OIDC)-3ddc84)](https://github.com/aimozart/entropa-public/actions/workflows/publish.yml)
-
-- 🔐 **ML-DSA (NIST FIPS-204)** signatures — verified byte-exact against NIST's own known-answer test vectors
-- 📜 **Signed transparency log** — checkpoints signed with ML-DSA, independently verifiable via real inclusion-proof and signature checks, no multi-party consensus required for a single-operator system
-- 🦀 **100% Rust** — cryptography, sequencer, and gateway, one language throughout
-- ☁️ **Real cloud infrastructure** — GCP IAM, Firebase Hosting, Cloud DNS, least-privilege service accounts, Gitea-hosted CI/CD with automated secret-scanning gates before merge, all managed as code
-- 🤖 AI **Probes** reason about what to record; the ledger makes the result replayable and non-repudiable
+- 🍃 **Java 21 / Spring Boot 3 / Spring Cloud** — Eureka, Config Server, Gateway, Resilience4j circuit breakers
+- 📨 **Event-driven architecture** — Apache Kafka connects ingest → transparency → notification services
+- 🔐 **Real identity & security** — Keycloak (OAuth2/OIDC) machine-to-machine auth, JWT validated at the gateway
+- ☁️ **Real cloud infrastructure** — Kubernetes (GKE), Helm, GCE HTTPS load balancers with Google-managed TLS, Cloud DNS, Secret Manager, IAM
+- 🧾 **Tamper-evident hash chain** — every record persisted via JPA/Hibernate to PostgreSQL, independently verifiable
+- ⚙️ Prior credential: designed and shipped Entropa's original **Rust** implementation (real ML-DSA/FIPS-204 post-quantum signatures, verified byte-exact against NIST's own ACVP test vectors) before migrating the system to its current Java/Spring architecture
 
 ### What I build
 
-Systems that need to be *provably* trustworthy, not just trusted — post-quantum cryptography, multi-agent
-architectures, and the deterministic scaffolding that makes probabilistic AI produce auditable results. That
-means the infrastructure underneath has to be just as disciplined as the cryptography on top of it:
-infrastructure-as-code, least-privilege access boundaries between services, and observability that catches
-problems before they're incidents.
+Systems that need to be *provably* correct, not just trusted — audit-trail infrastructure, event-driven
+microservices, and the deterministic scaffolding that makes AI-driven decisions accountable. That means
+the infrastructure underneath has to be as disciplined as the design on top of it: real service boundaries,
+least-privilege access, and observability that catches problems before they're incidents.
 
 ### How I ship
 
-Sprint-focused and iterative, not big-bang releases — get something real out, then tighten it fast based on
-what actually breaks. Entropa's build history is the evidence: three separate live bugs found, root-caused,
-fixed, tested, and redeployed **the same day** they surfaced, each one immediately followed by a regression
-test and a permanent guardrail (see the [failure-modes table](https://github.com/aimozart/entropa-public/blob/main/OBSERVABILITY.md)).
+Sprint-focused and iterative, not big-bang releases — get something real running, then harden it fast
+based on what actually breaks. Entropa's build history is the evidence: real production incidents
+(a Kafka authentication misconfiguration, a config-server packaging bug that left every service running
+on empty configuration, JVM startup tuning under constrained CPU) found via actual logs, root-caused,
+fixed, and redeployed the same session — see the
+[real incidents log](https://github.com/aimozart/entropa-public/blob/main/README.md#real-incidents-found-and-fixed).
 Ship, observe, fix fast, harden, repeat.
-
-### Currently building
-
-Active, ongoing infrastructure-as-code practice — real AWS, real verification, torn down after every session:
-
-- **[pulumi_mastery](https://github.com/aimozart/pulumi_mastery)** — drill-and-verification platform (Django + React) covering AWS/Pulumi IaC, Terraform-via-Pulumi interop (`pulumi_hcl`), and raw AWS CLI proficiency. Every drill is graded against real infrastructure state, not source code.
-- **[terraform_pulumi](https://github.com/aimozart/terraform_pulumi)** — Terraform-specific demos: remote state with locking, reusable module patterns across environments.
 
 ### Working pseudonymously
 
-I build and ship under this handle by choice — it keeps the conversation on the work, not a resume, and
+I build and ship under this handle by choice — it keeps the conversation on the work, not a résumé, and
 protects negotiating position from being anchored to a prior title or company. Real name, work history, and
 references are shared privately once a real conversation starts. Judge the code — it speaks for itself.
 
 ### Hire aimozart
 
-Entropa was built solo, end to end, under this handle — real post-quantum cryptography, a live signed
-transparency log, a production AI agent, real cloud infrastructure, CI/CD, monitoring, hardening. If one
-person directing AI at a senior bar can ship that alone, imagine what it does for your team.
+Entropa was built solo, end to end, under this handle — real Java/Spring microservices, event-driven
+architecture, Kubernetes deployment, real production incidents found and fixed live. If one person
+directing AI at a senior bar can ship that alone, imagine what it does for your team.
 
-Open to **salaried, full-time** Cloud Infrastructure / DevOps / SRE roles, or **per-project / contract**
-work. For startups, equity is always part of the package **in addition to** full salary and benefits — never
-a substitute for either.
+Open to **salaried, full-time** Backend / Systems Engineering roles, or **per-project / contract** work.
+For startups, equity is always part of the package **in addition to** full salary and benefits — never a
+substitute for either.
 
-**[→ Full pitch + contact form](https://entropa.space/hire#contact)**
+**[→ Full résumé + contact](https://entropa.space/hire)**
 
 ---
 
 <div align="center">
-<sub>Open to interesting problems. Reach out via <a href="https://entropa.space/hire#contact">entropa.space/hire</a>.</sub>
+<sub>Open to interesting problems. Reach out via <a href="https://entropa.space/hire">entropa.space/hire</a>.</sub>
 </div>
