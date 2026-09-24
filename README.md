@@ -2,72 +2,83 @@
 
 ### aimozart
 
-**Backend / Systems Engineer** — Java 21, Spring Boot / Spring Cloud microservices, Kafka, Kubernetes, AI-agent infrastructure.
+**Cloud Security Engineer**: Zero Trust identity · security posture & detection · HITRUST/HIPAA · post-quantum cryptography
+
+`AWS Solutions Architect – Associate` · `Databricks Spark Developer` · `Microsoft SC-500 (Cloud & AI Security Engineer): in progress`
 
 </div>
 
 ---
 
-### Building Entropa
+### Security has always been the job
 
-A **tamper-evident audit-trail platform for AI-agent decisions** — a real Java 21 / Spring Boot /
-Spring Cloud microservices system: Eureka service discovery, a centralized Config Server, an
-OAuth2/JWT-secured Spring Cloud Gateway, Kafka-driven event flow between an ingest service and a
-single-writer transparency/hash-chain service, PostgreSQL persistence, Keycloak identity, and a
-Stripe-integrated demo signup flow — containerized with Docker and deployed on Kubernetes (GKE)
-via a templated Helm chart, behind a real SSL-terminated load balancer.
+Twelve years of security work across every layer, whatever the title said:
 
-Zero real customers by design — this is a portfolio/demo project, not a live commercial product.
-A visitor signs up with a real Stripe **test-mode** checkout ($0, no real charge) and gets into a
-live dashboard showing real mock AI-agent decisions flowing through the actual pipeline, so the
-architecture is visibly real without anyone handing over real payment info.
+| Layer | What I've done |
+|---|---|
+| **Host & web** | Web-hosting security SME: Linux server hardening (iptables/CSF, fail2ban, ModSecurity, AppArmor, ClamAV/Maldet, cPanel/WHM & Plesk) plus WordPress hardening for 120+ enterprise accounts |
+| **Governance & compliance** | Co-authored a healthcare security-policy framework and drove the remediation to official **HITRUST certification** and continuous HIPAA compliance; PHI chain of custody, vulnerability scanning (Qualys/OpenVAS) |
+| **Incident response** | Led remediation during mission-critical outages in a 24/7 retail environment; wrote the SOPs |
+| **Endpoint & identity** | Enterprise **EDR** across a global fleet, **privileged access management**, patch and baseline-configuration management |
+| **Security by design** | Everything below: cryptography, cloud controls, supply chain, detection, built as code with the evidence public |
 
-**[→ github.com/aimozart/entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
+---
 
-- 🍃 **Java 21 / Spring Boot 3 / Spring Cloud** — Eureka, Config Server, Gateway, Resilience4j circuit breakers
-- 📨 **Event-driven architecture** — Apache Kafka connects ingest → transparency → notification services
-- 🔐 **Real identity & security** — Keycloak (OAuth2/OIDC) machine-to-machine auth, JWT validated at the gateway
-- ☁️ **Real cloud infrastructure** — Kubernetes (GKE), Helm, GCE HTTPS load balancers with Google-managed TLS, Cloud DNS, Secret Manager, IAM
-- 🧾 **Tamper-evident hash chain** — every record persisted via JPA/Hibernate to PostgreSQL, independently verifiable
-- ⚙️ Prior credential: designed and shipped Entropa's original **Rust** implementation (real ML-DSA/FIPS-204 post-quantum signatures, verified byte-exact against NIST's own ACVP test vectors) before migrating the system to its current Java/Spring architecture
+### 🔐 Entropa: a post-quantum, tamper-evident audit trail for AI decisions
 
-### What I build
+**[→ entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
-Systems that need to be *provably* correct, not just trusted — audit-trail infrastructure, event-driven
-microservices, and the deterministic scaffolding that makes AI-driven decisions accountable. That means
-the infrastructure underneath has to be as disciplined as the design on top of it: real service boundaries,
-least-privilege access, and observability that catches problems before they're incidents.
+- **Post-quantum signatures:** every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against
+  NIST's official ACVP test vectors. A negative control proves the suite catches a single corrupted byte, and receipts
+  were confirmed with an independent third-party ML-DSA implementation.
+- **Tamper evidence:** a Certificate-Transparency-style **Merkle log** with a separate tree for each customer,
+  signed checkpoints, and inclusion proofs. **Data-minimal:** only hashes are stored, never content.
+- **HITRUST-informed cloud:** mapped Google's HITRUST Shared Responsibility Matrix (3,342 requirements: 77 fully
+  inherited, 415 partially, **2,850 customer-owned**) and built the controls on my side of that split:
+  least-privilege service accounts, secrets and signing keys only in Secret Manager, OAuth2/JWT at the gateway
+  (Keycloak), SASL-authenticated Kafka, managed TLS. *Built and documented, not formally assessed.*
+- **Supply chain & secrets:** gitleaks in pre-commit and CI (**0 leaks across 348 commits**), daily dependency
+  vulnerability audits, crates published via **OIDC Trusted Publishing** (no long-lived tokens).
+- **Detection & response:** alerting on errors, uptime, a missing heartbeat, and queue age. Every incident is
+  root-caused from logs, fixed test-first with a permanent regression test, and written up in a
+  **[public incident log](https://github.com/aimozart/entropa-public/blob/main/README.md#real-incidents-found-and-fixed)**.
+- **Independently reviewed:** 17+ third-party builder-verification reports (Paxel, Y Combinator's builder tool).
 
-### How I ship
+---
 
-Sprint-focused and iterative, not big-bang releases — get something real running, then harden it fast
-based on what actually breaks. Entropa's build history is the evidence: real production incidents
-(a Kafka authentication misconfiguration, a config-server packaging bug that left every service running
-on empty configuration, JVM startup tuning under constrained CPU) found via actual logs, root-caused,
-fixed, and redeployed the same session — see the
-[real incidents log](https://github.com/aimozart/entropa-public/blob/main/README.md#real-incidents-found-and-fixed).
-Ship, observe, fix fast, harden, repeat.
+### 🛡️ In progress: Azure Zero Trust security capstone (SC-500)
 
-### Working pseudonymously
+A healthcare clinic's Azure environment, secured and monitored **entirely as code** (Bicep · PowerShell · KQL),
+completing October 2026 with a public evidence site:
 
-I build and ship under this handle by choice — it keeps the conversation on the work, not a résumé, and
-protects negotiating position from being anchored to a prior title or company. Real name, work history, and
-references are shared privately once a real conversation starts. Judge the code — it speaks for itself.
+- **Identity:** PIM just-in-time roles, conditional access with phishing-resistant MFA, locked-down app consent,
+  managed identities, Key Vault behind a private endpoint
+- **Posture:** Defender for Cloud, HITRUST/HIPAA regulatory compliance, JIT VM access, Machine Configuration
+  baselines, Secure Score measured **before and after**
+- **Detection & response:** Microsoft Sentinel with custom KQL analytics rules (MITRE-mapped), playbooks, and
+  PowerShell response runbooks, each validated with safe test signals and written up as an incident
+- **AI security:** Azure OpenAI with Entra-only auth, network isolation, Prompt Shields, Defender for AI
 
-### Hire aimozart
+---
 
-Entropa was built solo, end to end, under this handle — real Java/Spring microservices, event-driven
-architecture, Kubernetes deployment, real production incidents found and fixed live. If one person
-directing AI at a senior bar can ship that alone, imagine what it does for your team.
+### How I work
 
-Open to **salaried, full-time** Backend / Systems Engineering roles, or **per-project / contract** work.
-For startups, equity is always part of the package **in addition to** full salary and benefits — never a
-substitute for either.
+**Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent regression
+test. Secrets never touch the repo, and the scanners prove it. Irreversible actions wait for approval. The build
+history, incident log, and third-party reports are all here to check.
 
-**[→ Full résumé + contact](https://entropa.space/hire)**
+### About the handle
+
+`aimozart` is my handle, the name I build and ship under. Work history and references are on the résumé.
+
+### Open to
+
+**Cloud security engineering** roles (identity, posture, detection & response, Azure/GCP/AWS), full-time or contract.
+
+**[→ Résumé + contact](https://entropa.space/hire)**
 
 ---
 
 <div align="center">
-<sub>Open to interesting problems. Reach out via <a href="https://entropa.space/hire">entropa.space/hire</a>.</sub>
+<sub>Judge the work. It's all here.</sub>
 </div>
