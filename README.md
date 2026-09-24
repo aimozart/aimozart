@@ -37,8 +37,8 @@ Twelve years of security work across every layer, whatever the title said:
   inherited, 415 partially, **2,850 customer-owned**) and built the controls on my side of that split:
   least-privilege service accounts, secrets and signing keys only in Secret Manager, OAuth2/JWT at the gateway
   (Keycloak), SASL-authenticated Kafka, managed TLS. *Built and documented, not formally assessed.*
-- **Supply chain & secrets:** gitleaks in pre-commit and CI (**0 leaks across 348 commits**), dependency
-  vulnerability audits, crates published via **OIDC Trusted Publishing** (no long-lived tokens).
+- **Supply chain & secrets:** gitleaks in pre-commit and CI (**0 leaks across 348 commits**), CodeQL code scanning,
+  Dependabot + dependency review on every PR; the original Rust crates were published via **OIDC Trusted Publishing**.
 - **Detection & response:** alerting on errors, uptime, a missing heartbeat, and queue age. Every incident is
   root-caused from logs, fixed test-first with a permanent regression test, and written up in a
   **[public incident log](https://github.com/aimozart/entropa-public/blob/main/README.md#real-incidents-found-and-fixed)**.
@@ -55,10 +55,12 @@ Secrets don't get into my repos, and that's enforced by layered checks, not just
 | **Before the commit** | A local `pre-commit` hook runs **gitleaks** plus the full gate (format, lint, tests, file-size limits, dependency audit). A commit that fails any check is blocked |
 | **At the push** | **GitHub secret scanning + push protection** are enabled on every public repo, so GitHub rejects a push that contains a recognized credential |
 | **In CI** | **gitleaks** runs as its own CI job on every push, scanning the full git history, not just the diff |
+| **Code scanning (SAST)** | **CodeQL** (security-extended queries) analyzes the Java services on every push, every PR, and weekly |
+| **Dependencies** | **Dependabot** alerts + automatic security-fix PRs, weekly grouped updates for Gradle, GitHub Actions, and Docker base images; **dependency review** fails any PR that adds a known-vulnerable dependency |
 | **Across history** | Periodic full-history scans: **0 leaks across 348 commits** on the flagship. Known-safe fixtures (NIST FIPS-204 test vectors look like keys to a naive scanner) are documented in an allowlist, never silently ignored |
 | **Where secrets actually live** | GCP **Secret Manager** / Kubernetes secrets / encrypted **GitHub Actions secrets**. The only env file in a repo is `.env.example` with placeholders, and the real `.env` is gitignored |
 | **Separation** | Keys and private strategy live in a separate private repo that never touches a public remote. The private/public split is checked by remote before every push |
-| **Publishing** | Packages published via **OIDC Trusted Publishing**: short-lived tokens, no long-lived registry credentials stored anywhere |
+| **Publishing** | Entropa's original Rust crates were published via **OIDC Trusted Publishing**: short-lived tokens, no long-lived registry credentials |
 | **Human gate** | Irreversible actions (deploys, force-pushes, deletions, account-level changes) need an explicit approval step, including when an AI coding assistant is doing the work |
 
 ---
