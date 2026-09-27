@@ -2,42 +2,11 @@
 
 ### aimozart
 
-**Mainframe systems & security**: z/OS · JES2 · JCL · RACF · REXX · IBM i · 12 years of security & compliance
+**Cloud data engineer**: Azure · GCP · Databricks · Spark · SQL · Python · 12 years of security & compliance
 
-`AWS Solutions Architect – Associate` · `Databricks Spark Developer` · `IBM Z Xplore: in progress`
+`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark`
 
 </div>
-
----
-
-### 🦖 Why mainframes, and why now
-
-I've loved this era of computing since the '80s: running dial-up BBSes, and pulling Dow Jones stock quotes over
-Prodigy, a service that ran on IBM mainframes. Big iron has fascinated me the whole time: it's the machinery that
-quietly moves the world's money.
-
-Later, at **Cognizant**, I administered the **IBM i (AS/400)** systems that ran a 24/7 retail account's COBOL and
-RPG business applications, and led remediation during mission-critical outages. Keeping systems running and locked
-down is the work I like most.
-
-With the generation that built these systems retiring, I finally have my chance to get into the field, and I'm
-taking it: daily work on a **real z/OS system** (IBM Z Xplore) and on my own MVS system, focused on operations,
-systems and **RACF security**.
-
----
-
-### 🏦 Featured: Big Iron Bank
-
-**[→ cobol-z](https://github.com/aimozart/cobol-z)** · **[bigironbank.online](https://bigironbank.online)**: a small
-core bank on an emulated IBM System/370 (MVS 3.8j) that I **run and secure like a production shop**:
-
-- **Batch operations:** datasets and GDGs, a nightly End-of-Day job stream, daily shifts with scripted incidents
-  (S806, SD37, S0C7, duplicated input, a wrong business date), diagnosed, backed out and rerun
-- **Restart by design:** a failed night is rerun without double-posting, matched to the cent against a reference bank
-- **Security layer:** RAKF (RACF-style) dataset protection, a batch ID, read-only tellers, access reviews
-- **Automation:** REXX reports and checks; Zowe CLI automation on real z/OS
-
-*In progress. Clone it, boot TK5, submit the job, and watch the bank run.*
 
 ---
 ### 🔒 Security has always been the job
@@ -52,7 +21,7 @@ Twelve years of security work across every layer, whatever the title said:
 | **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
 | **Security by design** | Everything below: cryptography, controls, supply chain, and detection, built as code with the evidence public |
 
-That background is why I approach the mainframe the way banks and auditors need it: controlled, documented, and
+That background is why I build data platforms the way regulated companies need them: controlled, documented, and
 recoverable, with PCI DSS and SOX in mind.
 
 ---
@@ -80,10 +49,10 @@ never touch the repo, and the scanners prove it. Irreversible actions wait for a
 
 ### Open to
 
-**Remote** roles in **mainframe security (RACF)**, **mainframe operations / production support**, and **z/OS systems**,
-plus IBM i administration, especially in banking and financial services. Full-time or contract.
+**Remote** roles in **cloud data engineering** (Azure, GCP, Databricks), especially where security, governance and
+compliance matter. Full-time or contract.
 
-**[→ Résumé + contact](https://bigironbank.online/hire)**
+**[→ Résumé + contact](https://entropa.space/hire)**
 
 ---
 
