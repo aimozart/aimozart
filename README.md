@@ -47,7 +47,7 @@ Twelve years of security work across every layer, whatever the title said:
 | Layer | What I've done |
 |---|---|
 | **Governance & compliance** | Co-authored a healthcare security-policy framework and drove the remediation to official **HITRUST certification** and continuous HIPAA compliance; CIS Benchmark hardening of a live Windows fleet; PHI chain of custody on encrypted drives |
-| **Platform operations** | **IBM i (AS/400)** administration and outage remediation in a 24/7 retail environment; SOPs for Tier 1/2 support |
+| **Platform operations** | **IBM i (AS/400)** user administration and outage remediation in a 24/7 retail environment |
 | **Endpoint & identity** | Enterprise **EDR** across a global fleet, **privileged access management**, patch and baseline-configuration management |
 | **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
 | **Security by design** | Everything below: cryptography, controls, supply chain, and detection, built as code with the evidence public |
