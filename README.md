@@ -26,7 +26,7 @@ IBM i.
 
 ---
 
-### 🏦 Featured: Preston Federal Credit Union
+### 🏦 Featured: Big Iron Bank
 
 **[→ cobol-z](https://github.com/aimozart/cobol-z)**: a small but complete **core banking system in COBOL and JCL**,
 on an emulated IBM System/370 (MVS 3.8j), with a modernization finale on real IBM Z (z/OS):
