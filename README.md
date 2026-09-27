@@ -2,9 +2,9 @@
 
 ### aimozart
 
-**Cloud data engineer**: Azure · GCP · Databricks · Spark · SQL · Python · 12 years of security & compliance
+**AI governance & security**: NIST AI RMF · ISO/IEC 42001 · EU AI Act · HITRUST/HIPAA · 12 years of security & compliance
 
-`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark`
+`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `IAPP AIGP: in preparation`
 
 </div>
 
@@ -21,17 +21,19 @@ Twelve years of security work across every layer, whatever the title said:
 | **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
 | **Security by design** | Everything below: cryptography, controls, supply chain, and detection, built as code with the evidence public |
 
-That background is why I build data platforms the way regulated companies need them: controlled, documented, and
-recoverable, with PCI DSS and SOX in mind.
+AI needs the same discipline: know what's running, assess the risk, map the controls instead of assuming them,
+keep a human on anything irreversible, and leave a record that can be checked later. That's the work I do now.
 
 ---
 
-### 🔐 Entropa: a post-quantum, tamper-evident audit trail
+### 🔐 Entropa: a tamper-evident audit trail for AI-agent decisions
 
 **[→ entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
+- The record-keeping and traceability that NIST AI RMF and the EU AI Act expect, built rather than promised
 - Every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against NIST's official test vectors
-- A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs
+- A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs;
+  only hashes are stored, never customer content
 - Controls mapped from Google's HITRUST shared-responsibility matrix: least privilege, secrets only in Secret
   Manager. *Built and documented, not formally assessed.*
 - gitleaks in pre-commit and CI (**0 leaks across 348 commits**), CodeQL, Dependabot, and a **public incident log**
@@ -41,7 +43,8 @@ recoverable, with PCI DSS and SOX in mind.
 ### How I work
 
 **Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent fix. Secrets
-never touch the repo, and the scanners prove it. Irreversible actions wait for approval.
+never touch the repo, and the scanners prove it. My own AI coding agents work under written guardrails: tests
+first, scans on every change, and a human approval before anything irreversible.
 
 ### About the handle
 
@@ -49,8 +52,8 @@ never touch the repo, and the scanners prove it. Irreversible actions wait for a
 
 ### Open to
 
-**Remote** roles in **cloud data engineering** (Azure, GCP, Databricks), especially where security, governance and
-compliance matter. Full-time or contract.
+**Remote** roles in **AI governance, AI risk and AI security**: policy, risk assessments, control mapping, and the
+engineering behind them. Full-time or contract.
 
 **[→ Résumé + contact](https://entropa.space/hire)**
 
