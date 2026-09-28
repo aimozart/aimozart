@@ -2,11 +2,28 @@
 
 ### aimozart
 
-**AI governance & security**: NIST AI RMF · ISO/IEC 42001 · EU AI Act · HITRUST/HIPAA · 12 years of security & compliance
+**Elixir & Erlang/OTP**: fault-tolerant, distributed systems on the BEAM · 12 years of security & compliance
 
-`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `IAPP AIGP: in preparation`
+`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark`
 
 </div>
+
+---
+### ⚡ Now: Erlang and Elixir on the BEAM
+
+I wanted the hardest challenge I'd actually love. I wrote Erlang and Haskell before AI coding tools existed,
+and the BEAM's model is the systems work I want to do: millions of isolated processes, supervisors that
+restart what fails, nodes that keep going through a network partition.
+
+Eight weeks, in public:
+
+- **Production drills:** ten tickets modeled on real outages (a flooded mailbox, cascading crashes, a
+  netsplit, memory blowing up under a firehose), each closed only when tests prove the behavior under load
+- **BEAM Ledger:** a distributed, tamper-evident event ledger that grows every week: a SHA-256 hash chain,
+  supervision trees, ETS reads, signed receipts, quorum across three nodes, back-pressure, then Phoenix,
+  LiveView and Postgres
+
+Repositories go public here as each piece lands.
 
 ---
 ### 🔒 Security has always been the job
@@ -21,8 +38,7 @@ Twelve years of security work across every layer, whatever the title said:
 | **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
 | **Security by design** | Everything below: cryptography, controls, supply chain, and detection, built as code with the evidence public |
 
-AI needs the same discipline: know what's running, assess the risk, map the controls instead of assuming them,
-keep a human on anything irreversible, and leave a record that can be checked later. That's the work I do now.
+The same instinct drives the BEAM work: build systems that expect failure and recover by design.
 
 ---
 
@@ -30,7 +46,6 @@ keep a human on anything irreversible, and leave a record that can be checked la
 
 **[→ entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
-- The record-keeping and traceability that NIST AI RMF and the EU AI Act expect, built rather than promised
 - Every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against NIST's official test vectors
 - A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs;
   only hashes are stored, never customer content
@@ -43,8 +58,7 @@ keep a human on anything irreversible, and leave a record that can be checked la
 ### How I work
 
 **Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent fix. Secrets
-never touch the repo, and the scanners prove it. My own AI coding agents work under written guardrails: tests
-first, scans on every change, and a human approval before anything irreversible.
+never touch the repo, and the scanners prove it. Tests define the target before the code is written.
 
 ### About the handle
 
@@ -52,8 +66,8 @@ first, scans on every change, and a human approval before anything irreversible.
 
 ### Open to
 
-**Remote** roles in **AI governance, AI risk and AI security**: policy, risk assessments, control mapping, and the
-engineering behind them. Full-time or contract.
+**Remote** backend roles in **Elixir and Erlang/OTP**: distributed systems, reliability, and anything where
+security and uptime both matter (fintech, health, telecom). Full-time or contract.
 
 **[→ Résumé + contact](https://entropa.space/hire)**
 
