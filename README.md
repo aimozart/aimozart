@@ -1,6 +1,6 @@
 <div align="center">
 
-### aimozart
+### Scott Baker · aimozart
 
 **Database administrator: MongoDB Atlas** · Lotus Notes → MySQL → MongoDB · 12 years of security & compliance
 
@@ -70,16 +70,16 @@ That's why I run databases the way regulated companies need them: least privileg
 **Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent fix. Backups
 don't count until they've been restored. Irreversible actions wait for approval.
 
-### About the handle
+### About me
 
-`aimozart` is my handle, the name I build and ship under. Work history and references are on the résumé.
+I'm **Scott Baker**, in Phoenix, Arizona. `aimozart` is the handle I build and ship under. Résumé, work history and references: [bigironbank.online/hire](https://bigironbank.online/hire) · [entropa.space/hire](https://entropa.space/hire).
 
 ### Open to
 
 **Remote** roles in **MongoDB / Atlas database administration**, especially where security, compliance and uptime
 all matter. Full-time or contract.
 
-**[→ Résumé + contact](https://entropa.space/hire)**
+**[→ Résumé + contact](https://bigironbank.online/hire)**
 
 ---
 
