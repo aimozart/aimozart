@@ -15,7 +15,7 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 
 | When | Where | Databases |
 |---|---|---|
-| **1980s** | As a teenager | BBS sysop; first databases on the **Mac** and **OS/2**, mostly D&D characters |
+| **1980s** | As a teenager | BBS sysop; **HyperCard** (summer classes every year), **FileMaker** and **4th Dimension** on the Mac, plus OS/2. Mostly D&D characters |
 | **1990s** | | **Lotus Notes / Domino**: a document database, decades before "NoSQL" had a name |
 | **Early 2000s** | My own business | **MySQL on Windows**, installed, backed up and run myself |
 | **2012 – 2014** | Endurance International Group | **MySQL + phpMyAdmin** behind WordPress hosting for 120+ enterprise accounts: tuning, repairs, restores, hardening |
