@@ -2,28 +2,24 @@
 
 ### aimozart
 
-**Elixir & Erlang/OTP**: fault-tolerant, distributed systems on the BEAM · 12 years of security & compliance
+**Cloud data engineer**: Azure · GCP · Databricks · Spark · SQL · Python · 12 years of security & compliance
 
 `AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark`
 
 </div>
 
 ---
-### ⚡ Now: Erlang and Elixir on the BEAM
+### 🏦 Now building: Big Iron Bank, a bank's data platform
 
-I wanted the hardest challenge I'd actually love. I wrote Erlang and Haskell before AI coding tools existed,
-and the BEAM's model is the systems work I want to do: millions of isolated processes, supervisors that
-restart what fails, nodes that keep going through a network partition.
+A fictional Arizona community bank and the pipeline behind its books, built on Azure and then Google Cloud:
 
-Eight weeks, in public:
+- Daily branch transaction files land raw, get validated, and post to balances in a Bronze/Silver/Gold lakehouse
+- The books must balance to the cent, every day: opening + deposits − withdrawals = closing, or nothing publishes
+- Bad records are quarantined with a reason code; rerunning a day never double-posts
+- Account numbers masked, least-privilege access, and an audit trail of every load
+- Card transactions streamed through Kafka and flagged in real time
 
-- **Production drills:** ten tickets modeled on real outages (a flooded mailbox, cascading crashes, a
-  netsplit, memory blowing up under a firehose), each closed only when tests prove the behavior under load
-- **BEAM Ledger:** a distributed, tamper-evident event ledger that grows every week: a SHA-256 hash chain,
-  supervision trees, ETS reads, signed receipts, quorum across three nodes, back-pressure, then Phoenix,
-  LiveView and Postgres
-
-Repositories go public here as each piece lands.
+The repository goes public as each piece lands.
 
 ---
 ### 🔒 Security has always been the job
@@ -38,17 +34,17 @@ Twelve years of security work across every layer, whatever the title said:
 | **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
 | **Security by design** | Everything below: cryptography, controls, supply chain, and detection, built as code with the evidence public |
 
-The same instinct drives the BEAM work: build systems that expect failure and recover by design.
+That background is why I build data platforms the way regulated companies need them: controlled, documented, and
+recoverable, with PCI DSS and SOX in mind.
 
 ---
 
-### 🔐 Entropa: a tamper-evident audit trail for AI-agent decisions
+### 🔐 Entropa: a post-quantum, tamper-evident audit trail
 
 **[→ entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
 - Every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against NIST's official test vectors
-- A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs;
-  only hashes are stored, never customer content
+- A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs
 - Controls mapped from Google's HITRUST shared-responsibility matrix: least privilege, secrets only in Secret
   Manager. *Built and documented, not formally assessed.*
 - gitleaks in pre-commit and CI (**0 leaks across 348 commits**), CodeQL, Dependabot, and a **public incident log**
@@ -58,7 +54,7 @@ The same instinct drives the BEAM work: build systems that expect failure and re
 ### How I work
 
 **Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent fix. Secrets
-never touch the repo, and the scanners prove it. Tests define the target before the code is written.
+never touch the repo, and the scanners prove it. Irreversible actions wait for approval.
 
 ### About the handle
 
@@ -66,8 +62,8 @@ never touch the repo, and the scanners prove it. Tests define the target before 
 
 ### Open to
 
-**Remote** backend roles in **Elixir and Erlang/OTP**: distributed systems, reliability, and anything where
-security and uptime both matter (fintech, health, telecom). Full-time or contract.
+**Remote** roles in **cloud data engineering** (Azure, GCP, Databricks), especially where security, governance and
+compliance matter. Full-time or contract.
 
 **[→ Résumé + contact](https://entropa.space/hire)**
 
