@@ -80,6 +80,9 @@ forecast-vs-actual review after every teardown.
 
 ### How I work
 
+**Deterministic by default.** Forecast the outcome and the cost first, pin every input, then prove the result against
+the forecast. It saves labor and money and keeps projects on time and on budget.
+
 **Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent fix. Backups
 don't count until they've been restored. Irreversible actions wait for approval.
 
