@@ -2,9 +2,9 @@
 
 ### Scott Baker · aimozart
 
-**MongoDB Atlas: administration & development** · Lotus Notes → MySQL → MongoDB · 12 years of security & compliance
+**MongoDB Atlas administration** · Lotus Notes → MySQL → MongoDB · 12 years of security & compliance · ~10 years of FinOps
 
-`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `MongoDB Associate Atlas Administrator: in preparation` · `MongoDB Associate Developer (Node.js): in preparation`
+`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `MongoDB Associate Atlas Administrator: in preparation`
 
 </div>
 
@@ -24,7 +24,7 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 | **2019 – 2022** | Ultra Clean Technologies | **MySQL** administration, alongside enterprise EDR and privileged access management |
 | **Recent years** | Many projects | **MongoDB** and **Databricks** (Spark, Delta Lake) |
 
-Now: taking that into **MongoDB Atlas**, both running it and building on it, with the Associate Atlas Administrator and Associate Developer (Node.js) certifications on the way (October 2026).
+Now: taking that into **MongoDB Atlas administration**, with the Associate Atlas Administrator certification on the way (October 2026).
 
 ---
 ### 🏦 Now building: Big Iron Bank on MongoDB
@@ -38,8 +38,6 @@ A fictional Arizona community bank, run the way a DBA runs production:
 - **Backups actually restored**: `mongodump`, Atlas snapshots, point-in-time recovery
 - **Security first:** least-privilege roles (tellers read, the batch job writes, auditors audit), network isolation,
   encryption at rest with Google Cloud KMS, and SSNs protected with client-side field-level encryption
-- **The developer side:** a TypeScript API on the Node.js driver: statements by aggregation pipeline, transfers
-  in a transaction, customer search on Atlas Search, all tested
 - **Infrastructure as code:** the Atlas project, cluster, users and network rules built with Pulumi (TypeScript)
 
 The repository goes public as each piece lands.
@@ -64,9 +62,19 @@ That's why I run databases the way regulated companies need them: least privileg
 
 - Every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against NIST's official test vectors
 - A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs
-- **In progress:** migrating the Java (Spring Boot) service's audit log from Postgres to **MongoDB Atlas**, provisioned with
-  Pulumi, switched to Spring Data MongoDB test-first, with the hash chain re-verified on the new database
+- **Migrated to MongoDB Atlas (Sep 28, 2026):** the Java (Spring Boot) service's audit log moved from Postgres, provisioned
+  with Pulumi, switched to Spring Data MongoDB test-first, a zero-loss cutover through Kafka, and the hash chain
+  re-verified on the new database (35 records, 0 broken)
 - gitleaks in pre-commit and CI (**0 leaks across 348 commits**), CodeQL, Dependabot, and a **public incident log**
+
+---
+
+### 💰 FinOps, since my first AWS build
+
+Nearly 10 years of FinOps, starting with an electronic medical records (EMR) system I designed and built on AWS as an
+independent side project. I forecast cloud spend before building, choose for price-performance against the business
+goal, and reconcile the bill afterward: budgets and alerts tied to the forecast, cost per GB and per job, and a
+forecast-vs-actual review after every teardown.
 
 ---
 
@@ -81,7 +89,7 @@ I'm **Scott Baker**, in Phoenix, Arizona. `aimozart` is the handle I build and s
 
 ### Open to
 
-**Remote** roles in **MongoDB / Atlas database administration and development**, especially where security, compliance and uptime
+**Remote** roles in **MongoDB / Atlas database administration**, especially where security, compliance and uptime
 all matter. Full-time or contract.
 
 **[→ Résumé + contact](https://bigironbank.online/hire)**
