@@ -9,7 +9,7 @@
 </div>
 
 ---
-### 🔁 Migrations, since 2012
+### Migrations experience
 
 At Endurance International Group, migrations never stopped across its hosting brands (Bluehost, HostGator, iPower and others): databases, WordPress sites, domains, DNS and Linux hosts. I was on the migration team every time, including moving acquired domains into larger platforms, and I led the WordPress and hosting-account migrations. Big Iron West, below, is that same discipline rehearsed on purpose: predictions written before every run, validation before cutover, a rollback path, and a cost ceiling set in advance.
 
