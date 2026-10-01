@@ -9,6 +9,11 @@
 </div>
 
 ---
+### 🔁 Migrations, since 2012
+
+At Endurance International Group, migrations never stopped across its hosting brands (Bluehost, HostGator, iPower and others): databases, WordPress sites, domains, DNS and Linux hosts. I was on the migration team every time, including moving acquired domains into larger platforms, and I led the WordPress and hosting-account migrations. Big Iron West, below, is that same discipline rehearsed on purpose: predictions written before every run, validation before cutover, a rollback path, and a cost ceiling set in advance.
+
+---
 ### 🗄️ Databases, the whole way through
 
 I've been running online systems since my BBS sysop days in the '80s, and administering databases in every job since.
@@ -18,7 +23,7 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 | **1980s** | As a teenager | BBS sysop; **HyperCard** (summer classes every year at Haverford), **FileMaker** and **4th Dimension** on the Mac, plus OS/2. Mostly D&D characters |
 | **1990s** | | **Lotus Notes / Domino**: a document database, decades before "NoSQL" had a name |
 | **Early 2000s** | My own business | **MySQL on Windows**, installed, backed up and run myself |
-| **2012 – 2014** | Endurance International Group | **MySQL + phpMyAdmin** behind WordPress hosting for 120+ enterprise accounts: tuning, repairs, restores, hardening |
+| **2012 – 2014** | Endurance International Group | **MySQL + phpMyAdmin** behind WordPress hosting for 120+ enterprise accounts: tuning, repairs, restores, hardening; on the **migration team** for platform migrations across Bluehost, HostGator, iPower and others; led the WordPress and hosting-account migrations |
 | **2014 – 2017** | ECS (now Datavant) | **MySQL** administration in a HIPAA environment I helped take to **HITRUST certification** |
 | **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Lotus Notes / Domino** and database administration; **IBM i** user administration; C-level escalation support for down stores across the enterprise |
 | **2019 – 2022** | Ultra Clean Technologies | **MySQL** administration, alongside enterprise EDR and privileged access management |
