@@ -25,7 +25,7 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 | **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Active Directory** and **Windows virtualization (Hyper-V)** for the stores; **Lotus Notes / Domino**; **IBM i** user administration; C-level escalation support for down stores |
 | **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **SCCM** (imaging, patching, baselines), **Active Directory, Group Policy**; enterprise **EDR** and **privileged access management**; MySQL |
 
-Earlier: **Lotus Notes / Domino** in the 1990s, and my own business running **MySQL on Windows** in the early 2000s. Databases came along the whole way: MySQL, PostgreSQL, MongoDB, Databricks.
+Earlier: **Lotus Notes / Domino** in the 1990s, and my own business running **MySQL on Windows** in the early 2000s. Databases came along the whole way: MySQL, PostgreSQL, Databricks.
 
 ---
 ### 🧪 Now: an IT admin lab, built from scratch
@@ -52,8 +52,8 @@ That's why I run systems the way regulated companies need them: least privilege,
 
 - Every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against NIST's official test vectors
 - A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs
-- **Migrated to MongoDB Atlas (Sep 28, 2026):** the Java (Spring Boot) service's audit log moved from Postgres, provisioned
-  with Pulumi, switched to Spring Data MongoDB test-first, a zero-loss cutover through Kafka, and the hash chain
+- **Database migration (Sep 28, 2026):** the Java (Spring Boot) service's audit log moved off Postgres to a new managed database, provisioned
+  with Pulumi, switched test-first, a zero-loss cutover through Kafka, and the hash chain
   re-verified on the new database (35 records, 0 broken)
 - gitleaks in pre-commit and CI (**0 leaks across 348 commits**), CodeQL, Dependabot, and a **public incident log**
 
