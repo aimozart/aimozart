@@ -13,7 +13,7 @@
 
 At Endurance International Group, migrations never stopped across its hosting brands (Bluehost, HostGator, iPower and others): databases, WordPress sites, domains, DNS and Linux hosts. I was on the migration team every time, including moving acquired domains into larger platforms, and I led the WordPress and hosting-account migrations. Big Iron West, below, is that same discipline rehearsed on purpose: predictions written before every run, validation before cutover, a rollback path, and a cost ceiling set in advance.
 
-On the Windows side, I've done more version-to-version migrations than I can count: **Windows XP → 7 → 10 at ECS** and **Windows 7 → 11 across a global fleet at Ultra Clean**, with SCCM imaging.
+On the Windows side, I've done more version-to-version migrations than I can count: **Windows XP → 7 → 10 at ECS** and **Windows 7 → 11 across a global fleet at Ultra Clean**, with SCCM imaging. Also at ECS: a legacy **Windows NT domain (about 300 users) and individual NT servers moved to Windows Server 2012 R2**, policies and user accounts included.
 
 ---
 ### 🖥️ Windows and Linux administration, the whole way through
