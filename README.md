@@ -66,7 +66,7 @@ That's why I run systems the way regulated companies need them: least privilege,
 Nearly 10 years of FinOps, starting with an electronic medical records (EMR) system I designed and built on AWS as an
 independent side project. I forecast cloud spend before building, choose for price-performance against the business
 goal, and reconcile the bill afterward: budgets and alerts tied to the forecast, cost per GB and per job, and a
-forecast-vs-actual review after every teardown.
+forecast-vs-actual review after every teardown. In every role I've also picked hardware and software licensing and gone to vendors for the best deal.
 
 ---
 
