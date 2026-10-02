@@ -2,9 +2,9 @@
 
 ### Scott Baker · aimozart
 
-**MongoDB Atlas administration** · Lotus Notes → MySQL → MongoDB · 12 years of security & compliance · ~10 years of FinOps
+**Systems administration** · Windows Server · Active Directory · Group Policy · SCCM · Hyper-V · Linux · 12 years of security & compliance
 
-`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `MongoDB Associate Atlas Administrator: in preparation`
+`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `SCCM Administration certificate`
 
 </div>
 
@@ -14,38 +14,23 @@
 At Endurance International Group, migrations never stopped across its hosting brands (Bluehost, HostGator, iPower and others): databases, WordPress sites, domains, DNS and Linux hosts. I was on the migration team every time, including moving acquired domains into larger platforms, and I led the WordPress and hosting-account migrations. Big Iron West, below, is that same discipline rehearsed on purpose: predictions written before every run, validation before cutover, a rollback path, and a cost ceiling set in advance.
 
 ---
-### 🗄️ Databases, the whole way through
+### 🖥️ Windows and Linux administration, the whole way through
 
-I've been running online systems since my BBS sysop days in the '80s, and administering databases in every job since.
+I've been running online systems since my BBS sysop days in the '80s, and administering servers in every job since.
 
-| When | Where | Databases |
+| When | Where | What I administered |
 |---|---|---|
-| **1980s** | As a teenager | BBS sysop; **HyperCard** (summer classes every year at Haverford), **FileMaker** and **4th Dimension** on the Mac, plus OS/2. Mostly D&D characters |
-| **1990s** | | **Lotus Notes / Domino**: a document database, decades before "NoSQL" had a name |
-| **Early 2000s** | My own business | **MySQL on Windows**, installed, backed up and run myself |
-| **2012 – 2014** | Endurance International Group | **MySQL + phpMyAdmin** behind WordPress hosting for 120+ enterprise accounts: tuning, repairs, restores, hardening; on the **migration team** for platform migrations across Bluehost, HostGator, iPower and others; led the WordPress and hosting-account migrations |
-| **2014 – 2017** | ECS (now Datavant) | **MySQL** administration in a HIPAA environment I helped take to **HITRUST certification** |
-| **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Lotus Notes / Domino** and database administration; **IBM i** user administration; C-level escalation support for down stores across the enterprise |
-| **2019 – 2022** | Ultra Clean Technologies | **MySQL** administration, alongside enterprise EDR and privileged access management |
-| **Recent years** | Many projects | **MongoDB** and **Databricks** (Spark, Delta Lake) |
+| **2012 – 2014** | Endurance International Group | **Linux hosting** (Ubuntu/RHEL, cPanel/WHM, Plesk) and Windows duties, for 120+ enterprise accounts: tuning, repairs, restores, hardening; the **migration team** for platform migrations across Bluehost, HostGator, iPower and others |
+| **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, OS imaging with SCCM**, in a HIPAA environment I helped take to **HITRUST certification**; MySQL administration |
+| **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Active Directory** and **Windows virtualization (Hyper-V)** for the stores; **Lotus Notes / Domino**; **IBM i** user administration; C-level escalation support for down stores |
+| **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **SCCM** (imaging, patching, baselines), **Active Directory, Group Policy**; enterprise **EDR** and **privileged access management**; MySQL |
 
-Now: taking that into **MongoDB Atlas administration**, with the Associate Atlas Administrator certification on the way (October 2026).
+Earlier: **Lotus Notes / Domino** in the 1990s, and my own business running **MySQL on Windows** in the early 2000s. Databases came along the whole way: MySQL, PostgreSQL, MongoDB, Databricks.
 
 ---
-### 🏦 Now building: Big Iron Bank on MongoDB
+### 🧪 Now: an IT admin lab, built from scratch
 
-A fictional Arizona community bank, run the way a DBA runs production:
-
-- **Data model** for customers, accounts and card transactions, with schema validation that rejects bad documents
-- **Indexes proven with `explain()`**, and a slow query found with the profiler and fixed
-- **Money moves in multi-document ACID transactions**, and the books reconcile to the cent
-- **A replica set that survives a failover drill**, and a sharded transactions collection with a shard key I can defend
-- **Backups actually restored**: `mongodump`, Atlas snapshots, point-in-time recovery
-- **Security first:** least-privilege roles (tellers read, the batch job writes, auditors audit), network isolation,
-  encryption at rest with Google Cloud KMS, and SSNs protected with client-side field-level encryption
-- **Infrastructure as code:** the Atlas project, cluster, users and network rules built with Pulumi (TypeScript)
-
-The repository goes public as each piece lands.
+Refreshing Windows Server and Linux administration hands-on: a nine-machine lab on **QEMU/KVM** (Windows Server 2022, Windows 11, AlmaLinux, Ubuntu) for Active Directory, Group Policy, PKI, storage and failover clustering. In progress, and written up as I go.
 
 ---
 ### 🔒 Security has always been the job
@@ -57,7 +42,7 @@ The repository goes public as each piece lands.
 | **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
 | **Security by design** | Entropa, below: cryptography, controls, supply chain and detection, built as code with the evidence public |
 
-That's why I run databases the way regulated companies need them: least privilege, encrypted, audited, and recoverable.
+That's why I run systems the way regulated companies need them: least privilege, encrypted, audited, and recoverable.
 
 ---
 
@@ -97,8 +82,7 @@ I'm **Scott Baker**, in Phoenix, Arizona. `aimozart` is the handle I build and s
 
 ### Open to
 
-**Remote** roles in **MongoDB / Atlas database administration**, especially where security, compliance and uptime
-all matter. Full-time or contract.
+**Remote** roles in **systems administration** (Windows Server, Active Directory, Group Policy, SCCM, Linux), especially where security, compliance and uptime all matter. Full-time or contract.
 
 **[→ Résumé + contact](https://bigironbank.online/hire)**
 
