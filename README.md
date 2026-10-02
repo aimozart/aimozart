@@ -23,9 +23,9 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 | When | Where | What I administered |
 |---|---|---|
 | **2012 – 2014** | Endurance International Group | **Linux hosting** (Ubuntu/RHEL, cPanel/WHM, Plesk) and Windows duties, for 120+ enterprise accounts: tuning, repairs, restores, hardening; the **migration team** for platform migrations across Bluehost, HostGator, iPower and others |
-| **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, OS imaging with SCCM**, in a HIPAA environment I helped take to **HITRUST certification**; MySQL administration |
+| **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, SCCM** (imaging, policy, node setups, PXE servers), in a HIPAA environment I helped take to **HITRUST certification**; MySQL administration |
 | **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Active Directory** and **Windows virtualization (Hyper-V)** for the stores; **Lotus Notes / Domino**; **IBM i** user administration; C-level escalation support for down stores |
-| **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **SCCM** (imaging, patching, baselines), **Active Directory, Group Policy**; enterprise **EDR** and **privileged access management**; MySQL |
+| **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **SCCM** (node and PXE server setups, imaging, policy, patching, baselines), **Active Directory, Group Policy**; enterprise **EDR** and **privileged access management**; MySQL |
 
 Earlier: **Lotus Notes / Domino** in the 1990s, and my own business running **MySQL on Windows** in the early 2000s. Databases came along the whole way: MySQL, PostgreSQL, Databricks.
 
