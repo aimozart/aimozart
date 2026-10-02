@@ -2,11 +2,16 @@
 
 ### Scott Baker · aimozart
 
-**Systems administration** · Windows Server · Active Directory · Group Policy · SCCM · Hyper-V · Linux · 12 years of security & compliance
+**Microsoft 365 & identity governance** · HITRUST/HIPAA compliance · Entra ID · data loss prevention · privileged access · Windows Server · SCCM/Intune · 12+ years in enterprise IT
 
 `AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `SCCM Administration certificate`
 
 </div>
+
+---
+### Now: Copilot readiness and governance
+
+My focus is the governance of Microsoft environments: HITRUST/HIPAA compliance, endpoint data-loss-prevention, role-based and privileged access, and Microsoft 365 and Entra identity. I'm building hands-on **Microsoft Purview**, **Microsoft 365 Copilot readiness** and **Power Automate** skills in a lab tenant (in progress; not yet claimed as experience), with Big Iron Bank as the capstone scenario.
 
 ---
 ### Migrations experience
@@ -23,7 +28,7 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 | When | Where | What I administered |
 |---|---|---|
 | **2012 – 2014** | Endurance International Group | **Linux web hosting** (Ubuntu/RHEL, cPanel/WHM, Plesk), plus Windows Server hosting for the few customers who paid for it, for 120+ enterprise accounts: tuning, repairs, restores, hardening; the **migration team** for platform migrations across Bluehost, HostGator, iPower and others |
-| **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, SCCM across all its functions** (imaging, policy, node setups, PXE servers, application deployment to users), in a HIPAA environment I helped take to **HITRUST certification**; MySQL administration |
+| **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, SCCM across all its functions** (imaging, policy, node setups, PXE servers, application deployment to users), in a HIPAA environment I helped take to **HITRUST certification**, with **endpoint data-loss-prevention monitoring** for PHI (**LogRhythm Data Loss Defender** and the LogRhythm SIEM); MySQL administration |
 | **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Active Directory** and **Windows virtualization (Hyper-V)** for roughly 3,400 stores across the US and Canada (every TJX North American banner), including the French-language ones; **Microsoft Intune** for the company's mobile devices across the enterprise (including the C-level executives), the enterprise-wide **Software Center**, and Microsoft 365; **Lotus Notes / Domino**; **IBM i** user administration; C-level escalation support for down stores |
 | **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **Microsoft Intune** and **SCCM, all functions** (node and PXE server setups, imaging, application deployment to users, policy, patching, baselines), **Active Directory, Group Policy**, run heavily on **RBAC, group administration and global policy**; enterprise **EDR** and **privileged access management**; MySQL |
 | **2022 – now** | Independent projects | Hands-on **Azure administration** (Entra ID identity and access, Azure RBAC and Policy, Key Vault, Defender for Cloud and Sentinel, Bicep and PowerShell); **data engineering** (Spark, Delta Lake, Iceberg); Entropa |
