@@ -26,6 +26,7 @@ I've been running online systems since my BBS sysop days in the '80s, and admini
 | **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, SCCM across all its functions** (imaging, policy, node setups, PXE servers), in a HIPAA environment I helped take to **HITRUST certification**; MySQL administration |
 | **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Active Directory** and **Windows virtualization (Hyper-V)** for the stores; **Lotus Notes / Domino**; **IBM i** user administration; C-level escalation support for down stores |
 | **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **SCCM, all functions** (node and PXE server setups, imaging, policy, patching, baselines), **Active Directory, Group Policy**, run heavily on **RBAC, group administration and global policy**; enterprise **EDR** and **privileged access management**; MySQL |
+| **2022 – now** | Independent projects | Hands-on **Azure administration** (Entra ID identity and access, Azure RBAC and Policy, Key Vault, Defender for Cloud and Sentinel, Bicep and PowerShell); **data engineering** (Spark, Delta Lake, Iceberg); Entropa |
 
 Earlier: **Lotus Notes / Domino** in the 1990s, and my own business running **MySQL on Windows** in the early 2000s. Databases came along the whole way: MySQL, PostgreSQL, Databricks.
 
