@@ -2,95 +2,49 @@
 
 ### Scott Baker · aimozart
 
-**Microsoft 365 & identity governance** · HITRUST/HIPAA compliance · Entra ID · data loss prevention · privileged access · Windows Server · SCCM/Intune · 12+ years in enterprise IT
+**Test automation engineer (SDET)** · TypeScript · Playwright · API testing · CI/CD · custom test frameworks · 12+ years in enterprise IT, security and compliance
 
 `AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `SCCM Administration certificate`
 
 </div>
 
 ---
-### Now: Copilot readiness and governance
+### Now: building a TypeScript + Playwright test framework
 
-My focus is the governance of Microsoft environments: HITRUST/HIPAA compliance, endpoint data-loss-prevention, role-based and privileged access, and Microsoft 365 and Entra identity. I'm building hands-on **Microsoft Purview**, **Microsoft 365 Copilot readiness** and **Power Automate** skills in a lab tenant (in progress; not yet claimed as experience), with Big Iron Bank as the capstone scenario.
-
----
-### Migrations experience
-
-At Endurance International Group, migrations never stopped across its hosting brands (Bluehost, HostGator, iPower and others): databases, WordPress sites, domains, DNS and Linux hosts. I was on the migration team every time, including moving acquired domains into larger platforms, and I led the WordPress and hosting-account migrations. Big Iron West, below, is that same discipline rehearsed on purpose: predictions written before every run, validation before cutover, a rollback path, and a cost ceiling set in advance.
-
-On the Windows side, I've done more version-to-version migrations than I can count: **Windows XP → 7 → 10 at ECS** and **Windows 7 → 11 across a global fleet at Ultra Clean**, with SCCM imaging. Also at ECS: a legacy **Windows NT domain (about 300 users) and individual NT servers moved to Windows Server 2012 R2**, policies and user accounts included.
+Quality first: test, then produce. I'm mastering **TypeScript and Playwright** full time and building a public capstone, the **Big Iron Bank quality platform**: a framework with a typed API client and schema validation, page objects, a separate test environment for every parallel worker, and GitHub Actions and Jenkins pipelines, scored against **15 seeded defects** in a bank application (the suite must pass on the clean build and catch every defect). In progress, and not yet claimed as professional experience; results will be posted here only when they are measured.
 
 ---
-### 🖥️ Windows and Linux administration, the whole way through
+### How I work
 
-I've been running online systems since my BBS sysop days in the '80s, and administering servers in every job since.
+**Test first, deterministic by default.** Forecast the outcome, pin every input, confirm a test fails for the stated reason before writing the code, then prove the result against the forecast. A fixed defect gets a regression test; a flaky test gets investigated, never rerun until it turns green.
 
-| When | Where | What I administered |
-|---|---|---|
-| **2012 – 2014** | Endurance International Group | **Linux web hosting** (Ubuntu/RHEL, cPanel/WHM, Plesk), plus Windows Server hosting for the few customers who paid for it, for 120+ enterprise accounts: tuning, repairs, restores, hardening; the **migration team** for platform migrations across Bluehost, HostGator, iPower and others |
-| **2014 – 2017** | ECS / CIOX Health (now Datavant) | Heavy **Windows administration: Active Directory, Group Policy, SCCM across all its functions** (imaging, policy, node setups, PXE servers, application deployment to users), in a HIPAA environment I helped take to **HITRUST certification**, with **endpoint data-loss-prevention monitoring** for PHI (**LogRhythm Data Loss Defender** and the LogRhythm SIEM); MySQL administration |
-| **2018 – 2019** | Cognizant (TJ Maxx / HomeGoods) | **Active Directory** and **Windows virtualization (Hyper-V)** for roughly 3,400 stores across the US and Canada (every TJX North American banner), including the French-language ones; **Microsoft Intune** for the company's mobile devices across the enterprise (including the C-level executives), the enterprise-wide **Software Center**, and Microsoft 365; **Lotus Notes / Domino**; **IBM i** user administration; C-level escalation support for down stores |
-| **2019 – 2022** | Ultra Clean Technologies | Windows-heavy: **Microsoft Intune** and **SCCM, all functions** (node and PXE server setups, imaging, application deployment to users, policy, patching, baselines), **Active Directory, Group Policy**, run heavily on **RBAC, group administration and global policy**; enterprise **EDR** and **privileged access management**; MySQL |
-| **2022 – now** | Independent projects | Hands-on **Azure administration** (Entra ID identity and access, Azure RBAC and Policy, Key Vault, Defender for Cloud and Sentinel, Bicep and PowerShell); **data engineering** (Spark, Delta Lake, Iceberg); Entropa |
-
-Earlier: **Lotus Notes / Domino** in the 1990s, and my own business running **MySQL on Windows** in the early 2000s. Databases came along the whole way: MySQL, PostgreSQL, Databricks.
+**Evidence over assertion.** I check my own claims and correct them in public. The record of that habit, including an over-claim I caught and fixed, is the [Paxel chat log](https://github.com/aimozart/entropa-public/blob/rust-archive/PAXEL_CHAT_LOG.md).
 
 ---
-### 🧪 Now: an IT admin lab, built from scratch
-
-Refreshing Windows Server and Linux administration hands-on: a nine-machine lab on **QEMU/KVM** (Windows Server 2022, Windows 11, AlmaLinux, Ubuntu) for Active Directory, Group Policy, PKI, storage and failover clustering. In progress, and written up as I go.
-
----
-### 🔒 Security has always been the job
-
-| Layer | What I've done |
-|---|---|
-| **Governance & compliance** | Co-authored a healthcare security-policy framework and drove the remediation to official **HITRUST certification** and continuous HIPAA compliance; CIS Benchmark hardening of a live Windows fleet; PHI chain of custody on encrypted drives |
-| **Endpoint & identity** | Enterprise **EDR** across a global fleet, **privileged access management**, patch and baseline-configuration management |
-| **Host & web** | Linux server hardening and WordPress security for 120+ enterprise accounts |
-| **Security by design** | Entropa, below: cryptography, controls, supply chain and detection, built as code with the evidence public |
-
-That's why I run systems the way regulated companies need them: least privilege, encrypted, audited, and recoverable.
-
----
-
 ### 🔐 Entropa: a post-quantum, tamper-evident audit trail
 
 **[→ entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
-- Every record signed with **ML-DSA-65 (NIST FIPS-204)**, verified byte-for-byte against NIST's official test vectors
-- A Certificate-Transparency-style **Merkle log** with per-customer trees, signed checkpoints, and inclusion proofs
-- **Database migration (Sep 28, 2026):** the Java (Spring Boot) service's audit log moved off Postgres to a new managed database, provisioned
-  with Pulumi, switched test-first, a zero-loss cutover through Kafka, and the hash chain
-  re-verified on the new database (35 records, 0 broken)
-- gitleaks in pre-commit and CI (**0 leaks across 348 commits**), CodeQL, Dependabot, and a **public incident log**
+- Rust implementation: **207 passing automated tests** (documented 2026-08-23), official NIST FIPS-204 ACVP known-answer vectors verified byte for byte, JSON contract tests, lease lifecycle tests with a fake store and clock
+- gitleaks in pre-commit and CI (**0 real leaks across the full history**), CodeQL, Dependabot, and a **public incident log** where every bug lists its root cause next to the guardrail that now prevents it
+- Current system: Java (Spring Boot) microservices on Kubernetes (GKE) with Kafka; a database migration with a zero-loss cutover and a hash chain re-verified afterward (35 records, 0 broken)
 
 ---
+### Background: 12+ years of enterprise systems, security and compliance
 
-### 💰 FinOps, since my first AWS build
+| Where | What |
+|---|---|
+| **CIOX Health (now Datavant)**, 2014 – 2017 | Helped take a HIPAA environment to official **HITRUST certification**: evidence for every control, **Qualys and OpenVAS** vulnerability scanning turned into remediation plans, endpoint data-loss-prevention monitoring; Windows administration (Active Directory, Group Policy, SCCM) |
+| **Cognizant (TJ Maxx)**, 2018 – 2019 | Active Directory and Hyper-V for roughly 3,400 stores; Intune for the enterprise's mobile devices; the SOPs and remediation documentation that enforced procedure across Tier 1 and 2 |
+| **Ultra Clean**, 2019 – 2022 | Baseline-configuration audits across a global fleet; Intune and SCCM, all functions; EDR and privileged access management; Windows 7 to 11 migration (team effort) |
+| **Endurance International**, 2012 – 2014 | Level 3 Linux engineer for 120+ enterprise accounts; migration team across Bluehost, HostGator and others |
 
-Nearly 10 years of FinOps, starting with an electronic medical records (EMR) system I designed and built on AWS as an
-independent side project. I forecast cloud spend before building, choose for price-performance against the business
-goal, and reconcile the bill afterward: budgets and alerts tied to the forecast, cost per GB and per job, and a
-forecast-vs-actual review after every teardown. In every role I've also picked hardware and software licensing and gone to vendors for the best deal.
+Full history: [Résumé](https://bigironbank.online/hire).
 
 ---
-
-### How I work
-
-**Deterministic by default.** Forecast the outcome and the cost first, pin every input, then prove the result against
-the forecast. It saves labor and money and keeps projects on time and on budget.
-
-**Evidence over assertion.** Measure before and after. Every incident gets a write-up and a permanent fix. Backups
-don't count until they've been restored. Irreversible actions wait for approval.
-
-### About me
-
-I'm **Scott Baker**, in Phoenix, Arizona. `aimozart` is the handle I build and ship under. Résumé, work history and references: [bigironbank.online/hire](https://bigironbank.online/hire) · [entropa.space/hire](https://entropa.space/hire).
-
 ### Open to
 
-**Remote** roles in **systems administration** (Windows Server, Active Directory, Group Policy, SCCM, Linux), especially where security, compliance and uptime all matter. Full-time or contract.
+**Remote** roles in **QA automation / SDET** (TypeScript, Playwright, API testing, CI/CD), especially where quality, security and compliance matter. Full-time or contract. Phoenix, AZ.
 
 **[→ Résumé + contact](https://bigironbank.online/hire)**
 
