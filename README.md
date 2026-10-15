@@ -2,26 +2,33 @@
 
 ### Scott Baker · aimozart
 
-**Test automation engineer (SDET)** · TypeScript · Playwright · API testing · CI/CD · custom test frameworks · 12+ years in enterprise IT, security and compliance
+**Security analyst · threat hunting · incident response · SIEM and EDR · healthcare security (HIPAA)** · 12+ years in enterprise IT, security and compliance
 
 `AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `SCCM Administration certificate`
 
 </div>
 
 ---
-### Now: building a TypeScript + Playwright test framework
+### What I do best: find and contain threats
 
-Quality first: test, then produce. I'm mastering **TypeScript and Playwright** full time and building a public capstone, the **Big Iron Bank quality platform**: a framework with a typed API client and schema validation, page objects, a separate test environment for every parallel worker, and GitHub Actions and Jenkins pipelines, scored against **15 seeded defects** in a bank application (the suite must pass on the clean build and catch every defect). In progress, and not yet claimed as professional experience; results will be posted here only when they are measured.
+My strongest work has been defensive security: running a **SIEM** (LogRhythm), triaging and containing threats with **CrowdStrike EDR** across a global fleet, building a vulnerability-scanning program from scratch (**OpenVAS**, Qualys), and analyzing network traffic with **Wireshark**. **Threat hunting is my favorite part of the job.** I taught myself most of it, and I come from healthcare, so I also know how a security finding becomes a reportable **HIPAA** breach.
+
+---
+### Now: hands-on threat hunting and cloud security
+
+Studying and practicing, not yet claimed as professional experience: network threat hunting and forensics (Wireshark, Zeek, RITA, MITRE ATT&CK), AWS security (GuardDuty, CloudTrail, Security Hub), and building a hunt-and-report capstone for a fictional healthcare organization with a HIPAA breach-assessment layer. Results will be posted here only when they are measured.
 
 ---
 ### How I work
 
-**Test first, deterministic by default.** Forecast the outcome, pin every input, confirm a test fails for the stated reason before writing the code, then prove the result against the forecast. A fixed defect gets a regression test; a flaky test gets investigated, never rerun until it turns green.
-
 **Evidence over assertion.** I check my own claims and correct them in public. The record of that habit, including an over-claim I caught and fixed, is the [Paxel chat log](https://github.com/aimozart/entropa-public/blob/rust-archive/PAXEL_CHAT_LOG.md).
+
+**Test first, deterministic by default.** Forecast the outcome, pin every input, confirm a test fails for the stated reason before writing the code, then prove the result against the forecast.
 
 ---
 ### 🔐 Entropa: a post-quantum, tamper-evident audit trail
+
+Designed and directed by me, built with AI coding assistance under rules I wrote (test-first changes, secret scanning, human approval before irreversible actions).
 
 **[→ entropa-public](https://github.com/aimozart/entropa-public)** · **[entropa.space](https://entropa.space)**
 
@@ -44,7 +51,7 @@ Full history: [Résumé](https://bigironbank.online/hire).
 ---
 ### Open to
 
-**Remote** roles in **QA automation / SDET** (TypeScript, Playwright, API testing, CI/CD), especially where quality, security and compliance matter. Full-time or contract. Phoenix, AZ.
+**Remote or Phoenix** roles in **security operations, incident response and threat hunting**, especially in healthcare or other regulated industries where security and compliance matter. Full-time or contract. Phoenix, AZ.
 
 **[→ Résumé + contact](https://bigironbank.online/hire)**
 
