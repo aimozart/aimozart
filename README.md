@@ -2,7 +2,7 @@
 
 ### Scott Baker · aimozart
 
-**Security analyst · threat hunting · incident response · SIEM and EDR · healthcare security (HIPAA)** · 12+ years in enterprise IT, security and compliance
+**Security analyst · AWS security · threat hunting · incident response · SIEM and EDR · healthcare security (HIPAA)** · 12+ years in enterprise IT, security and compliance
 
 `AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `SCCM Administration certificate`
 
