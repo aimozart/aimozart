@@ -2,13 +2,23 @@
 
 ### Scott Baker · aimozart
 
-**Security analyst · AWS security · threat hunting · incident response · SIEM and EDR · healthcare security (HIPAA)** · 12+ years in enterprise IT, security and compliance
+**Data engineer: Scala 2.13 · Apache Spark 4 · Delta Lake · healthcare data pipelines (HIPAA-aligned)** · 12+ years in enterprise IT, security and compliance
 
-`AWS Solutions Architect – Associate` · `Databricks Certified Associate Developer for Apache Spark` · `SCCM Administration certificate`
+`Databricks Certified Associate Developer for Apache Spark (Scala)` · `AWS Solutions Architect – Associate` · `SCCM Administration certificate`
 
 </div>
 
 ---
+### Now building in public
+
+**[hippagrchealthcare](https://github.com/aimozart/hippagrchealthcare)** is a nightly batch pipeline on synthetic healthcare data with four medallion layers (bronze, silver, gold, platinum): tests first, idempotent reruns, quarantine with reasons, masking and row-level access control, and every run benchmarked and published as I optimise. Live at **[hippagrchealthcare.site](https://hippagrchealthcare.site)**. I write the Scala; **Mr. Spock** (an AI architect and reviewer, [@spock-entropa](https://github.com/spock-entropa)) builds the site, CI and tooling around it and is credited as a contributor. AI assistance is disclosed, reviewed and tested. All data is synthetic.
+
+**Why security shows up in my data work.** I came up through security and compliance (SIEM, EDR, vulnerability programs, a HIPAA environment taken to HITRUST certification), so masking, access control, audit trails and honest limits are part of how I build, not an afterthought.
+
+---
+### Earlier work: security engineering and Entropa
+The sections below are earlier work: defensive security, threat hunting and Entropa, a post-quantum tamper-evident audit trail. They stay here because they show how I verify things.
+
 ### ⚡ Start here: 10 things worth your time (each one is a click)
 
 1. **[Paxel builder report and the public record behind it](https://github.com/aimozart/entropa-public/blob/rust-archive/PAXEL_CHAT_LOG.md)**: an independent analysis of my AI-orchestrated engineering. It credits production-proof discipline and steering AI at the architecture level, and the thread shows me challenging its findings with evidence until it agreed.
@@ -25,7 +35,7 @@
 *Entropa is designed and directed by me and built with AI coding assistance under rules I wrote. The numbers and links above are checkable; that is the point.*
 
 ---
-### What I do best: find and contain threats
+### Security background: find and contain threats
 
 My strongest work has been defensive security: running a **SIEM** (LogRhythm), triaging and containing threats with **CrowdStrike EDR** across a global fleet, building a vulnerability-scanning program from scratch (**OpenVAS**, Qualys), and analyzing network traffic with **Wireshark**. **Threat hunting is my favorite part of the job.** I taught myself most of it, and I come from healthcare, so I also know how a security finding becomes a reportable **HIPAA** breach.
 
