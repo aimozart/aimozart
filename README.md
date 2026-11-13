@@ -2,7 +2,7 @@
 
 ### Scott Baker · aimozart
 
-**AI Deployment Engineer · AI Orchestrator / Architect: agentic systems with guardrails, evaluation and signed audit trails · Healthcare and financial data** · 12+ years in enterprise IT, security and compliance
+**AI Deployment Engineer · AI Orchestrator / Architect: agentic systems with guardrails, evaluation and signed audit trails · IT, security and regulated data** · 12+ years in enterprise IT, security and compliance
 
 `Databricks Certified Associate Developer for Apache Spark (Scala)` · `AWS Solutions Architect – Associate` · `SCCM Administration certificate`
 
@@ -11,7 +11,7 @@
 ---
 ### Now building in public
 
-**An AI claims-denials triage agent, and the proof around it.** [hippagrchealthcare](https://github.com/aimozart/hippagrchealthcare) takes denied-claim cases (synthetic data only) through rules first, a model (Gemini on Vertex) second, output guards, a Cedar policy gate and a human review step, and every decision lands as a signed, hash-only record on [Entropa](https://entropa.space). It is built stage by stage: a plan and a forecast first, red tests as their own commit, an independent review, then the measured result against the forecast. Failed bars are reported as failed (the needs_human recall bar missed 7 of 100 on a fresh set, and the next stage fixes it in code, not in the prompt). A fraud-triage agent for [bigironbank.online](https://bigironbank.online) follows the same pattern and is planned.
+**Entropa, and a Rust retrieval system over the standards.** [Entropa](https://entropa.space) is a post-quantum-signed, witnessed evidence layer for controls: rules, a policy gate and a human step, and a signed record of every decision that anyone can verify offline. Next to it I am building, in Rust, a retrieval system over the standards themselves (versioned, sealed, cited by clause), so the guardrails cite real source text. It is built stage by stage: a plan and a forecast first, red tests as their own commit, an independent review, then the measured result against the forecast. Failed bars are reported as failed. The first proof is a control-by-control self-assessment of my own estate against primary-source controls. Earlier simulated case studies (a claims-triage agent on synthetic data, which missed its recall bar on two fresh sets) are parked and kept, not hidden.
 
 **Security first, and proven.** Every LLM risk gets a control in code, an attack test and a published number. Policies are public in [sec-procedures](https://github.com/aimozart/sec-procedures) (aligned with and mapped to, never "compliant"). I came up through security and compliance (SIEM, EDR, vulnerability programs, a HIPAA environment taken to HITRUST certification), so audit trails and honest limits are part of how I build.
 
