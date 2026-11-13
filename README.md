@@ -2,7 +2,7 @@
 
 ### Scott Baker · aimozart
 
-**Data engineer: Scala 2.13 · Apache Spark 4 · Delta Lake · healthcare data pipelines (HIPAA-aligned)** · 12+ years in enterprise IT, security and compliance
+**AI Deployment Engineer · AI Orchestrator / Architect: agentic systems with guardrails, evaluation and signed audit trails · Healthcare and financial data** · 12+ years in enterprise IT, security and compliance
 
 `Databricks Certified Associate Developer for Apache Spark (Scala)` · `AWS Solutions Architect – Associate` · `SCCM Administration certificate`
 
@@ -11,9 +11,11 @@
 ---
 ### Now building in public
 
-**[hippagrchealthcare](https://github.com/aimozart/hippagrchealthcare)** is a nightly batch pipeline on synthetic healthcare data with four medallion layers (bronze, silver, gold, platinum): tests first, idempotent reruns, quarantine with reasons, masking and row-level access control, and every run benchmarked and published as I optimise. Live at **[hippagrchealthcare.site](https://hippagrchealthcare.site)**. I write the Scala; **Mr. Spock** (an AI architect and reviewer, [@spock-entropa](https://github.com/spock-entropa)) builds the site, CI and tooling around it and is credited as a contributor. AI assistance is disclosed, reviewed and tested. All data is synthetic.
+**An AI claims-denials triage agent, and the proof around it.** [hippagrchealthcare](https://github.com/aimozart/hippagrchealthcare) takes denied-claim cases (synthetic data only) through rules first, a model (Gemini on Vertex) second, output guards, a Cedar policy gate and a human review step, and every decision lands as a signed, hash-only record on [Entropa](https://entropa.space). It is built stage by stage: a plan and a forecast first, red tests as their own commit, an independent review, then the measured result against the forecast. Failed bars are reported as failed (the needs_human recall bar missed 7 of 100 on a fresh set, and the next stage fixes it in code, not in the prompt). A fraud-triage agent for [bigironbank.online](https://bigironbank.online) follows the same pattern and is planned.
 
-**Why security shows up in my data work.** I came up through security and compliance (SIEM, EDR, vulnerability programs, a HIPAA environment taken to HITRUST certification), so masking, access control, audit trails and honest limits are part of how I build, not an afterthought.
+**Security first, and proven.** Every LLM risk gets a control in code, an attack test and a published number. Policies are public in [sec-procedures](https://github.com/aimozart/sec-procedures) (aligned with and mapped to, never "compliant"). I came up through security and compliance (SIEM, EDR, vulnerability programs, a HIPAA environment taken to HITRUST certification), so audit trails and honest limits are part of how I build.
+
+**How it is built.** All of this was done with Claude Code on a $20/month plan, under rules I wrote: forecast first, prove against the forecast. The crew is credited: Mr. Spock (orders and review) and Scotty (builder) are AI sessions, disclosed and reviewed. The earlier Scala/Spark pipeline work is parked, not deleted.
 
 ---
 ### Earlier work: security engineering and Entropa
@@ -30,7 +32,7 @@ The sections below are earlier work: defensive security, threat hunting and Entr
 7. **[Automated pipelines](https://github.com/aimozart/entropa-public/tree/main/.github/workflows)**: CI, CodeQL, dependency review, Dependabot, and a CD workflow that deploys to GKE only after CI passes.
 8. **[Trusted Publisher on crates.io](https://github.com/aimozart/entropa-public/blob/rust-archive/.github/workflows/publish.yml)**: my Rust crates (**[entropa-core](https://crates.io/crates/entropa-core)**, **[entropa-node](https://crates.io/crates/entropa-node)**) publish through GitHub OIDC, so there is no long-lived token anywhere. Secretless by design.
 9. **Kubernetes, observability and identity as code**: a **[Helm chart with autoscaling](https://github.com/aimozart/entropa-public/tree/main/helm/entropa)** for the Java (Spring Boot) microservices on GKE, the **[Prometheus, Loki, Tempo and Grafana configuration](https://github.com/aimozart/entropa-public/tree/main/observability)**, and the **[Keycloak OAuth2/JWT realm](https://github.com/aimozart/entropa-public/tree/main/security/keycloak)**.
-10. **Built on a $20-a-month AI plan, funded by a Google for Startups grant**: **[Entropa](https://entropa.space)** was built end to end by directing AI tools under rules I wrote (test first, forecast then prove): method over budget. Awarded a **Google for Startups Cloud Program grant ($2,000 in credits)**. On the Microsoft Agentic DevOps Engineer path: AZ-401 (beta) scheduled Nov 9, 2026 (result pending), GH-300 scheduled.
+10. **Built on a $20-a-month AI plan, funded by a Google for Startups grant**: **[Entropa](https://entropa.space)** was built end to end by directing AI tools under rules I wrote (test first, forecast then prove): method over budget. Awarded a **Google for Startups Cloud Program grant ($2,000 in credits)**.
 
 *Entropa is designed and directed by me and built with AI coding assistance under rules I wrote. The numbers and links above are checkable; that is the point.*
 
