@@ -74,14 +74,14 @@ Designed and directed by me, built with AI coding assistance under rules I wrote
 | **Ultra Clean**, 2019 – 2022 | Baseline-configuration audits across a global fleet; Intune and SCCM, all functions; EDR and privileged access management; Windows 7 to 11 migration (team effort) |
 | **Endurance International**, 2012 – 2014 | Level 3 Linux engineer for 120+ enterprise accounts; migration team across Bluehost, HostGator and others |
 
-Full history: [Résumé](https://bigironbank.online/hire).
+Full history: [Résumé](https://entropa.space/hire).
 
 ---
 ### Open to
 
 **Remote or Phoenix** roles as an **AI Deployment Engineer** or **AI Orchestrator / Architect**: taking agentic systems to production with guardrails, evaluation and signed audit trails, especially for healthcare and financial data where security and compliance matter. Full-time or contract. Phoenix, AZ.
 
-**[→ Résumé + contact](https://bigironbank.online/hire)**
+**[→ Résumé + contact](https://entropa.space/hire)**
 
 ---
 
