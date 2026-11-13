@@ -62,7 +62,7 @@ Designed and directed by me, built with AI coding assistance under rules I wrote
 
 - Rust implementation: **229 passing automated tests, 0 failures** across the full workspace (run on 2026-10-17; the public archive branch runs 106 of them), official NIST FIPS-204 ACVP known-answer vectors verified byte for byte, JSON contract tests, lease lifecycle tests with a fake store and clock
 - gitleaks in pre-commit and CI (**0 real leaks across the full history**), CodeQL, Dependabot, and a **public incident log** where every bug lists its root cause next to the guardrail that now prevents it
-- Current system: Java (Spring Boot) microservices on Kubernetes (GKE) with Kafka; a database migration with a zero-loss cutover and a hash chain re-verified afterward (35 records, 0 broken)
+- Current system: a Rust, serverless ledger on Cloud Run that signs every AI decision with a KMS-held ML-DSA-65 key, three ledgers (AI decisions, evidence, council), witnesses on Azure and AWS, and public explorers; it replaced an earlier Java / Spring / Kafka / Kubernetes version, now archived
 
 ---
 ### Background: 12+ years of enterprise systems, security and compliance
@@ -79,7 +79,7 @@ Full history: [Résumé](https://bigironbank.online/hire).
 ---
 ### Open to
 
-**Remote or Phoenix** roles in **security operations, incident response and threat hunting**, especially in healthcare or other regulated industries where security and compliance matter. Full-time or contract. Phoenix, AZ.
+**Remote or Phoenix** roles as an **AI Deployment Engineer** or **AI Orchestrator / Architect**: taking agentic systems to production with guardrails, evaluation and signed audit trails, especially for healthcare and financial data where security and compliance matter. Full-time or contract. Phoenix, AZ.
 
 **[→ Résumé + contact](https://bigironbank.online/hire)**
 
