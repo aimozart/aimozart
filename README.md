@@ -9,6 +9,12 @@
 </div>
 
 ---
+
+## Our mission: verify, don't trust
+AI systems are being trusted with decisions about people's money, health, work and safety, and almost no one outside the vendor can check what they did or why. I think that is dangerous. **[Entropa](https://entropa.space)** exists to make AI and LLM security, and tamper-evident, post-quantum-signed audit trails, **free and open for everyone**: tools that limit what an AI can read and send, and a signed record of every decision that anyone can verify for themselves, today and after quantum computers. I publish my results, including every failure ([results of record](https://results.entropa.space)), because public safety needs proof, not promises. Code: Apache-2.0, a full giveaway; I earn my living from setup, review, attack testing and training. [Repository](https://github.com/aimozart/entropa-public) · [Docs](https://docs.entropa.space)
+
+---
+
 ### Now building in public
 
 **Entropa Gate, free and open source.** [Entropa Gate](https://entropa.space) is a free Linux app that limits what an AI can read and send, asks a person to approve big actions, and keeps a signed, tamper-evident record of every decision that anyone can verify offline. The code is being released under **Apache-2.0** (a full giveaway; I earn my living from setup, architecture review, attack tests and training), with the documents and measurements already public: [docs](https://docs.entropa.space) and [results of record](https://results.entropa.space), failures included. Next to it I build, in Rust, a retrieval system over the standards (versioned, sealed, cited by clause). Everything is built stage by stage: a plan and a forecast first, red tests as their own commit, my own sealed tests written by someone other than the builder, then the measured result against the forecast. Failed bars are reported as failed.
