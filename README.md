@@ -2,7 +2,7 @@
 
 ### Scott Baker · aimozart
 
-**AI Deployment Engineer · AI Orchestrator / Architect: agentic systems with guardrails, evaluation and signed audit trails · IT, security and regulated data** · 12+ years in enterprise IT, security and compliance
+**Forward-Deployed AI Engineer: agentic systems with guardrails, evaluation and signed audit trails · IT, security and regulated data** · 12+ years in enterprise IT, security and compliance
 
 `Databricks Certified Associate Developer for Apache Spark (Scala)` · `AWS Solutions Architect – Associate` · `SCCM Administration certificate`
 
@@ -19,7 +19,7 @@ AI systems are being trusted with decisions about people's money, health, work a
 
 **Entropa Gate, free and open source.** [Entropa Gate](https://entropa.space) is a free Linux app that limits what an AI can read and send, asks a person to approve big actions, and keeps a signed, tamper-evident record of every decision that anyone can verify offline. The code is published under **Apache-2.0** at [entropa-gate](https://github.com/aimozart/entropa-gate) (a full giveaway; I earn my living from setup, architecture review, attack tests and training), with the documents and measurements already public: [docs](https://docs.entropa.space) and [results of record](https://results.entropa.space), failures included. Next to it I build, in Rust, a retrieval system over the standards (versioned, sealed, cited by clause). Everything is built stage by stage: a plan and a forecast first, red tests as their own commit, my own sealed tests written by someone other than the builder, then the measured result against the forecast. Failed bars are reported as failed.
 
-**Security first, and proven.** Every LLM risk gets a control in code, an attack test and a published number. Policies are public in [sec-procedures](https://github.com/aimozart/sec-procedures) (aligned with and mapped to, never "compliant"). I came up through security and compliance (SIEM, EDR, vulnerability programs, a HIPAA environment taken to HITRUST certification), so audit trails and honest limits are part of how I build.
+**Security first, and proven.** Every LLM risk gets a control in code, an attack test and a published number. Evidence is "aligned with" or "mapped to" a standard, never "compliant" (see the [self-assessment](https://docs.entropa.space/self-assessment)). I came up through security and compliance (SIEM, EDR, vulnerability programs, a HIPAA environment taken to HITRUST certification), so audit trails and honest limits are part of how I build.
 
 **How it is built.** All of this was done with Claude Code on a $20/month plan, under rules I wrote: forecast first, prove against the forecast. The crew is credited: Mr. Spock (orders and review) and Scotty (builder) are AI sessions, disclosed and reviewed. The earlier Scala/Spark pipeline work is parked, not deleted.
 
@@ -89,7 +89,7 @@ Full history: [Résumé](https://entropa.space/hire).
 ---
 ### Open to
 
-**Remote or Phoenix** roles as an **AI Deployment Engineer** or **AI Orchestrator / Architect**: taking agentic systems to production with guardrails, evaluation and signed audit trails, especially for healthcare and financial data where security and compliance matter. Full-time or contract. Phoenix, AZ.
+**Remote or Phoenix** roles as a **Forward-Deployed AI Engineer**: taking agentic systems to production with guardrails, evaluation and signed audit trails, especially for healthcare and financial data where security and compliance matter. Full-time or contract. Phoenix, AZ.
 
 **[→ Résumé + contact](https://entropa.space/hire)**
 
