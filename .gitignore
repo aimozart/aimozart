@@ -1,0 +1,12 @@
+
+# Private agent and harness files must never be committed to a public repository
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+.claude/
+SESSION_STATE.md
+MILESTONES*.md
+BRIEFING.md
+notes/
+docs/prompts-out/
+instructions-notes.md
