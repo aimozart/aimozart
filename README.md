@@ -2,7 +2,7 @@
 
 ### Scott Baker · aimozart
 
-**AI Deployment Engineer · AI Orchestrator / Architect: agentic systems with guardrails, evaluation and signed audit trails · IT, security and regulated data** · 12+ years in enterprise IT, security and compliance
+**Forward-Deployed AI Engineer: agentic systems with guardrails, evaluation and signed audit trails · IT, security and regulated data** · 12+ years in enterprise IT, security and compliance
 
 `Databricks Certified Associate Developer for Apache Spark (Scala)` · `AWS Solutions Architect – Associate` · `SCCM Administration certificate`
 
@@ -89,7 +89,7 @@ Full history: [Résumé](https://entropa.space/hire).
 ---
 ### Open to
 
-**Remote or Phoenix** roles as an **AI Deployment Engineer** or **AI Orchestrator / Architect**: taking agentic systems to production with guardrails, evaluation and signed audit trails, especially for healthcare and financial data where security and compliance matter. Full-time or contract. Phoenix, AZ.
+**Remote or Phoenix** roles as a **Forward-Deployed AI Engineer**: taking agentic systems to production with guardrails, evaluation and signed audit trails, especially for healthcare and financial data where security and compliance matter. Full-time or contract. Phoenix, AZ.
 
 **[→ Résumé + contact](https://entropa.space/hire)**
 
